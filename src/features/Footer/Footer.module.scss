@@ -4,6 +4,11 @@
   display: flex;
   align-content: center;
   justify-content: flex-end;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
 
   .footerInput{
     width: 440px;
