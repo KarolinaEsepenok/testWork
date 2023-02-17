@@ -1,15 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import s from './App.module.scss'
+import MainPage from "../src/features/mainPage/MainPage";
+import Footer from '../src/features/Footer/Footer';
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-     hihihi
-      </header>
-    </div>
-  );
+    return (
+        <div className={s.appContainer}>
+            <MainPage/>
+<Footer/>
+        </div>
+    );
 }
 
 export default App;
