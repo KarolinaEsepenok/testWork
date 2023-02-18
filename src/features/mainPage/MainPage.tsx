@@ -3,8 +3,7 @@ import s from '../mainPage/MainPage.module.scss'
 import logoLead from '../../assets/img/logoLead.svg'
 
 import Button from '../../common/components/Button/Button';
-import Footer from '../Footer/Footer';
-import arrowRight from '../../assets/img/arrowRight.png';
+import {Timer} from '../mainPage/Timer/Timer';
 
 
 
@@ -12,8 +11,8 @@ const MainPage = () => {
 
     return (
         <div className={s.mainPageContainer}>
-            <div className={s.mainLogoImg} >
-                <img alt={'logoLead'} title={'logoLead'} src={logoLead}/>
+            <div className={s.mainLogoImg}>
+               <a href={'https://www.onliner.by/'} target={'_self'}><img alt={'logoLead'} title={'Lead'} src={logoLead}/></a>
             </div>
             <div className={s.mainNameDescr}>
                 <h1 className={s.mainName}>
@@ -24,16 +23,15 @@ const MainPage = () => {
                 </p>
             </div>
             <div>
-
+                <Timer/>
             </div>
             <div className={s.mainNameDescr}>
                 <p className={s.mainDescr}>
                     Check our event page when you wait:
                 </p>
-              <Button/>
+                <Button href={'https://www.onliner.by/'} target={'_blank'} name={'Go to the event'}/>
 
             </div>
-
 
         </div>
     );
@@ -41,4 +39,5 @@ const MainPage = () => {
 
 export default MainPage;
 {/*<
-*/}
+*/
+}

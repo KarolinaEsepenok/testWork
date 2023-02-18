@@ -1,3 +1,4 @@
+@import './variables';
 @mixin text($fontFamily, $fontSize, $fontWeight, $textColor, $opacity, $lineHeight) {
   font-family: $fontFamily;
   font-size: $fontSize;
@@ -5,4 +6,10 @@
   color: $textColor;
   opacity: $opacity;
   line-height: $lineHeight;
+}
+@mixin timerItem($background, $minWidth, $marginRight, $marginLeft){
+  background: $background;
+  min-width: $minWidth ;
+  margin-right: $marginRight;
+  margin-left: $marginLeft;
 }

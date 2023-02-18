@@ -1,7 +1,8 @@
 import React from 'react';
 import s from './App.module.scss'
 import MainPage from "../src/features/mainPage/MainPage";
-import Footer from '../src/features/Footer/Footer';
+import {Notification} from '../src/features/Notification/Notification';
+
 
 
 
@@ -9,7 +10,8 @@ function App() {
     return (
         <div className={s.appContainer}>
             <MainPage/>
-<Footer/>
+            <Notification/>
+
         </div>
     );
 }

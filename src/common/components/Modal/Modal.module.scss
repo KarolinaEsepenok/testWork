@@ -1,0 +1,44 @@
+@import 'src/common/style/mixins';
+
+@import 'src/common/style/variables';
+
+.modal {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.4);
+  .content {
+    position: relative;
+
+    width: 100%;
+    max-width: 395px;
+    padding: 20px 25px 47px;
+
+    background-color: $background-base-color;
+    .titleContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      margin-bottom: 54px;
+      .title{
+
+      }
+      .close {
+        cursor: pointer;
+
+        padding: 7px;
+      }
+    }
+  }
+  }
+

@@ -1,0 +1,49 @@
+@import 'src/common/style/mixins';
+
+@import 'src/common/style/variables';
+.notificContainer{
+  background-color: #162C4E;
+  height: 192px;
+  display: grid;
+  grid-template-columns: 1fr 1000px 1fr;
+  max-width: 1920px;
+  margin-top: 150px;
+  .notificForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    height: 100%;
+    .formError{
+    color:#DF2224;
+      position: absolute;
+  }
+    .notificInput{
+      width: 440px;
+      height: 59px;
+      border-radius: 40px;
+      align-self: center;
+      box-sizing: border-box;
+    }
+    .notificBtn{
+      align-self: center;
+cursor: pointer;
+      width: 43px;
+      height: 43px;
+      border-radius: 50%;
+      border: none;
+      background-color: #DF2224;
+    }
+  }
+  .notificLinkCont{
+    align-self: center;
+    @include text('Poppins', 20px, 400, #FFF, 1, 150% );
+    .notifikLinkImg{
+      vertical-align: sub;
+    }
+  }
+
+
+
+}

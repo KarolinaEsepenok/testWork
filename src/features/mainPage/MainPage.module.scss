@@ -1,52 +1,45 @@
+@import 'src/common/style/mixins';
+
+@import 'src/common/style/variables';
 
 .mainPageContainer{
   font-family: 'Poppins';
   font-size: 72px;
   font-weight: 700;
-
-
   text-align: center;
   background: url('../../assets/img/bgImgLeft.png') no-repeat top 0px left 0px/470px 419px,
-  #F5F5F5 url('../../assets/img/bgImgRight.png') no-repeat top 0px right 0px/271px 327px;
+  url('../../assets/img/bgImgRight.png') no-repeat top 0px right 0px/271px 327px;
 
     .mainLogoImg {
       padding-top: 110px;
       text-align: center;
+      cursor: pointer;
 
     }
   .mainNameDescr{
+
     .mainName{
-     font-weight: 700;
-      font-size: 72px;
-      color: #162C4E;
-      opacity: 39%;
-      line-height: 104%;
       max-width: 868px;
      display: inline-block;
       margin-bottom: 0px;
-      //@include text('Poppins', 72px, 700, #162C4E, 39%, 104% );
+      @include text('Poppins', 72px, 700, #162C4E, 39%, 104% );
     }
     .mainDescr{
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 150%;
-      color: rgba(0, 0, 0, 0.8);
       max-width: 432px;
       display: block;
       margin: 0 auto;
+      @include text('Poppins', 18px, 400, rgba(0, 0, 0, 0.8), 1, 150% );
     }
     .btn{
       height: 68px;
       width: 240px;
       background-color: #162C4E;
       border-radius: 40px;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 150%;
+      @include text('Poppins', 18px, 400, #FFF, 1, 150% );
       .link{
         box-sizing: border-box;
         height: max-content;
-        padding: 10px 20px;
+        padding: 10px 0px;
         display: inline-block;
         vertical-align: center;
         width: 100%;

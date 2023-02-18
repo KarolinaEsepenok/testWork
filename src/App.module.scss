@@ -1,6 +1,12 @@
+@import 'src/common/style/mixins';
+
+@import 'src/common/style/variables';
+
 .appContainer{
-  background-color: #F5F5F5;
+  background-color: $background-base-color;
   max-width: 1920px;
+  margin: 0 auto;
+  height: 100vh;
 
 
 }
