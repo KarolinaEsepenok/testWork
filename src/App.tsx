@@ -6,12 +6,12 @@ import {EventsPage} from '../src/features/EventsPage/EventsPage';
 
 
 
+
 function App() {
     return (
         <div className={s.appContainer}>
             <div className={s.center}>
             <MainPage/>
-            <EventsPage/>
 
         </div>
         </div>

@@ -3,24 +3,37 @@
 @import '../../../common/style/variables';
 
 .notificContainer {
-  background-color: #162C4E;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   height: 192px;
+  background-color: #162C4E;
   display: grid;
-  grid-template-columns: 1fr 1100px 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   max-width: 1920px;
-  margin-top: 150px;
-
+  @media screen and (max-width: 1600px) {
+    position: relative;
+  }
   .notificForm {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
     height: 100%;
 
     .formError {
       color: #DF2224;
+      width: 440px;
+      height: 59px;
+      border-radius: 40px;
+      align-self: center;
+      box-sizing: border-box;
+      border: 1px solid #DF2224;
+      padding-left: 20px;
+      font-size: 18px;
+     &::placeholder{
+       color: #DF2224;
 
+     }
     }
 
     .notificInput {
@@ -29,6 +42,8 @@
       border-radius: 40px;
       align-self: center;
       box-sizing: border-box;
+      padding-left: 20px;
+      font-size: 18px;
     }
 
     .notificBtn {
@@ -39,7 +54,7 @@
       border-radius: 50%;
       border: none;
       background-color: #DF2224;
-     margin-left: -56px;
+      margin-left: -56px;
     }
   }
 

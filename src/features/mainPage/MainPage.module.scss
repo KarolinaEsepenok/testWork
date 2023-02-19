@@ -3,57 +3,90 @@
 @import 'src/common/style/variables';
 
 .mainPageContainer {
+  position: relative;
+  height: calc(100vh - 192px);
+  min-height: 100%;
+  padding-bottom: 192px;
   text-align: center;
-  height: 100vh;
   background: url('../../assets/img/bgImgLeft.png') no-repeat top 0px left 0px/470px 419px,
   url('../../assets/img/bgImgRight.png') no-repeat top 0px right 0px/271px 327px;
-  @include text('Poppins', 72px, 600, #162C4E, 1, 100%);
-
-  .mainLogoImg {
-    padding-top: 110px;
-    padding-bottom: 46px;
-    text-align: center;
-    cursor: pointer;
+  @media screen and (max-width: 1600px) {
+    height: 100%;
   }
 
-  .mainNameDescr {
-    .mainDescr {
-      max-width: 432px;
-      display: block;
-      margin: 0 auto;
-      @include text('Poppins', 18px, 400, rgba(0, 0, 0, 0.8), 1, 150%);
+  .mainContent {
+    .mainLogoImg {
+      padding-top: 110px;
+      padding-bottom: 46px;
+      text-align: center;
+      cursor: pointer;
     }
 
-    .btn {
-      height: 60px;
-      width: 240px;
-      background-color: #162C4E;
-      border-radius: 40px;
-      @include text('Poppins', 18px, 400, #FFF, 1, 150%);
+    .mainNameDescr {
+      .mainDescr {
+        max-width: 432px;
+        display: block;
+        margin: 0 auto;
+        @include text('Poppins', 18px, 400, rgba(0, 0, 0, 0.8), 1, 150%);
+      }
 
-      .link {
-        box-sizing: border-box;
-        height: max-content;
-        padding: 10px 0px;
-        display: inline-block;
-        vertical-align: center;
-        width: 100%;
-        text-decoration: none;
-        color: #FFF;
+    }
 
-        .img {
-          vertical-align: text-bottom;
-          margin-left: 32px;
+    .mainLogoImg {
+      padding-top: 110px;
+      padding-bottom: 46px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .mainNameDescr {
+      .mainDescr {
+        max-width: 432px;
+        display: block;
+        margin: 0 auto;
+        @include text('Poppins', 18px, 400, rgba(0, 0, 0, 0.8), 1, 150%);
+      }
+    }
+
+    .mainNameDescr1 {
+      padding-bottom: 150px;
+
+      .mainDescr1 {
+        max-width: 432px;
+        display: block;
+        margin: 10px auto;
+        @include text('Poppins', 18px, 400, rgba(0, 0, 0, 0.8), 1, 150%);
+      }
+
+      .btn {
+        height: 60px;
+        width: 240px;
+        background-color: #162C4E;
+        border-radius: 40px;
+        @include text('Poppins', 18px, 400, #FFF, 1, 150%);
+
+        .link {
+          box-sizing: border-box;
+          height: max-content;
+          padding: 10px 0px;
+          display: inline-block;
+          vertical-align: center;
+          width: 100%;
+          text-decoration: none;
+          color: #FFF;
+
+          .img {
+            vertical-align: text-bottom;
+            margin-left: 32px;
+          }
+
         }
 
       }
 
     }
-
-
   }
-
-
 }
+
 
 

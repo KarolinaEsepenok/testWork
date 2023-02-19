@@ -34,8 +34,6 @@ export const Notification = () => {
             return errors
         },onSubmit: (values, {resetForm}) => {
             setIsloading(true)
-
-
             axios.post('https://back-portfolio-neon.vercel.app/', {
                 email: values.email,
 
@@ -46,7 +44,8 @@ export const Notification = () => {
                     resetForm()
                 })
                 .catch(() => {
-                    alert("Something went wrong... Your message hasn't been sent! Please try again.")
+                    setModal(true)
+
                 })
                 .finally(() => {
                     setIsloading(false)
@@ -59,8 +58,15 @@ export const Notification = () => {
         <div className={s.notificContainer}>
             <div></div>
             <form className={s.notificForm} autoComplete={'off'} onSubmit={formik.handleSubmit}>
-            <input type={'email'}placeholder={'Your Email'} className={s.notificInput} disabled={isLoading} {...formik.getFieldProps("email")}/>
-                {formik.errors.email ? <span className={s.formError}>{formik.errors.email}</span> : null}
+
+                {formik.errors.email ?<input type={'email'}placeholder={'Please, enter your Email'} className={s.formError}
+                                             disabled={isLoading} {...formik.getFieldProps("email")}/>
+                    : <input type={'email'}placeholder={'Enter your Email and get notified'} className={s.notificInput}
+                                                 disabled={isLoading} {...formik.getFieldProps("email")}/>}
+
+
+
+
             <button disabled={
                 !!formik.errors.email} type={'submit'} className={s.notificBtn}><img src={arrow} alt={'notification'}/></button>
            </form>

@@ -11,6 +11,7 @@ margin-top: 30px;
 
     display: flex;
     justify-content: center;
+    @include text('Poppins', 72px, 600, #162C4E, 1, 100%);
     .timerDays{
       @include timerItem( url('../../../assets/img/days.png') no-repeat bottom 0px right 0px/132px 44px, 132px, 10px,0px)
     }
