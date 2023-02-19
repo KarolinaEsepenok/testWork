@@ -1,0 +1,10 @@
+@import 'src/common/style/mixins';
+
+@import 'src/common/style/variables';
+
+
+.mainName{
+ display: flex;
+  justify-content: center;
+  @include text('Poppins', 72px, 700, #162C4E, 39%, 104%);
+}

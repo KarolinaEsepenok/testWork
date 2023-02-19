@@ -4,6 +4,8 @@ import logoLead from '../../assets/img/logoLead.svg'
 
 import Button from '../../common/components/Button/Button';
 import {Timer} from '../mainPage/Timer/Timer';
+import {Notification} from '../mainPage/Notification/Notification';
+import Title from '../../common/components/Title/Title';
 
 
 
@@ -15,9 +17,7 @@ const MainPage = () => {
                <a href={'https://www.onliner.by/'} target={'_self'}><img alt={'logoLead'} title={'Lead'} src={logoLead}/></a>
             </div>
             <div className={s.mainNameDescr}>
-                <h1 className={s.mainName}>
-                    UNDER CONSTRUCTION
-                </h1>
+              <Title name={' UNDER CONSTRUCTION'} />
                 <p className={s.mainDescr}>
                     We're making lots of improvements and will be back soon
                 </p>
@@ -31,8 +31,9 @@ const MainPage = () => {
                 </p>
                 <Button href={'https://www.onliner.by/'} target={'_blank'} name={'Go to the event'}/>
 
-            </div>
 
+            </div>
+            <Notification/>
         </div>
     );
 };

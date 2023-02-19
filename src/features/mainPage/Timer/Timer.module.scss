@@ -15,13 +15,13 @@ margin-top: 30px;
       @include timerItem( url('../../../assets/img/days.png') no-repeat bottom 0px right 0px/132px 44px, 132px, 10px,0px)
     }
     .timerHours{
-      @include timerItem( url('../../../assets/img/days.png') no-repeat bottom 0px right 0px/132px 44px, 132px, 10px,10px)
+      @include timerItem( url('../../../assets/img/hours.png') no-repeat bottom 0px right 0px/132px 44px, 132px, 10px,10px)
     }
     .timerMinutes{
-      @include timerItem( url('../../../assets/img/days.png') no-repeat bottom 0px right 0px/132px 44px, 132px, 10px,10px)
+      @include timerItem( url('../../../assets/img/minutes.png') no-repeat bottom 0px right 0px/132px 44px, 132px, 10px,10px)
     }
     .timerSeconds{
-      @include timerItem( url('../../../assets/img/days.png') no-repeat bottom 0px right 0px/132px 44px, 132px, 0px,10px)
+      @include timerItem( url('../../../assets/img/seconds.png') no-repeat bottom 0px right 0px/132px 44px, 132px, 0px,10px)
     }
   }
 

@@ -4,9 +4,13 @@
 
 .appContainer{
   background-color: $background-base-color;
-  max-width: 1920px;
-  margin: 0 auto;
-  height: 100vh;
+  margin: 0 ;
+  padding: 0;
 
+  .center {
+    max-width:1960px;
+    margin:0 auto;
+
+  }
 
 }

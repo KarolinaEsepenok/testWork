@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import s from './Notification.module.scss'
-import arrow from '../../assets/img/arrowRight.png'
-import arrowDone from '../../assets/img/arrowDone.png'
+import arrow from '../../../assets/img/arrowRight.png'
+import arrowDone from '../../../assets/img/arrowDone.png'
 import {useFormik} from "formik";
 
 import axios from "axios";
-import {Modal} from '../../common/components/Modal/Modal';
-import closeBtn from '../../assets/img/closeBtn.png'
+import {Modal} from '../../../common/components/Modal/Modal';
+
 
 interface FormikErrorType {
     email?: string
@@ -71,7 +71,6 @@ export const Notification = () => {
                     </button>
                 </div>
             </Modal>}
-
 
             <div className={s.notificLinkCont}><a className={s.notificLink}>Other Events<img className={s.notifikLinkImg} src={arrowDone}/></a></div>
         </div>
