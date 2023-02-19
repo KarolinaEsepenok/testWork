@@ -4,14 +4,19 @@
 
 .mainPageContainer {
   position: relative;
-
+height: 100vh;
   min-height: 100%;
   text-align: center;
-  background: url('../../assets/img/bgImgLeft.png') no-repeat top 0px left 0px/470px 419px,
+  background: url('../../assets/img/bgImgLeft.png') no-repeat top 0 left 0px/470px 419px,
   url('../../assets/img/bgImgRight.png') no-repeat top 0px right 0px/271px 327px;
   @media screen and (max-width: 1200px) {
-    background: url('../../assets/img/bgImgLeft.png') no-repeat top 0px left 0px/330px 269px,
+    background: url('../../assets/img/bgImgLeft.png') no-repeat top 0 left 0px/330px 269px,
     url('../../assets/img/bgImgRight.png') no-repeat top 0px right 0px/271px 327px;
+
+  }
+  @media screen and (max-width: 768px) {
+    background: url('../../assets/img/bgImgLeft.png') no-repeat top -20px left -10px/280px 219px,
+    url('../../assets/img/bgImgRight.png') no-repeat top -10px right -40px/271px 327px;
 
   }
 
@@ -78,7 +83,7 @@
         .link {
           box-sizing: border-box;
           height: max-content;
-          padding: 10px 0px;
+          padding: 10px 0;
           display: inline-block;
           vertical-align: center;
           width: 100%;
