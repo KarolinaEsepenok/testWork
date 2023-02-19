@@ -1,4 +1,4 @@
-import React, {ReactNode, useEffect, useState} from 'react'
+import React, {ReactNode} from 'react'
 import closeBtn from '../../../assets/img/closeBtn.png'
 
 
@@ -26,9 +26,10 @@ export const Modal: React.FC<ModalType> = ({children,title, value, handleCloseMo
                     <div className={s.titleContainer}>
                         <h2 className={s.title}>{title}</h2>
                     </div>
-                    <p className={s.modalSubtitle}>
-                        You have successfully subscribed to the email newsletter
-                    </p>{children}
+                    <div className={s.subtitleContainer}>
+                        <p className={s.subtitle}>{value}</p>
+                    </div>
+                    {children}
 
                 </div>
             </div>

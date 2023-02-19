@@ -12,39 +12,42 @@ interface FormikErrorType {
     email?: string
 
 }
+
 export const Notification = () => {
     const [isLoading, setIsloading] = useState(false)
-    const [modal, setModal] = useState(false)
+    const [modalError, setModalError] = useState(false)
+    const [modalSuccess, setModalSuccess] = useState(false)
     const handleCloseModal = () => {
-        setModal(false)
+        setModalSuccess(false)
+        setModalError(false)
 
     }
     const formik = useFormik({
         initialValues: {
-           email: ''
+            email: ''
         },
         validate: values => {
             const errors: FormikErrorType = {}
             if (!values.email) {
                 return {
-                    email:'Please, enter your email'
+                    email: 'Please, enter your email'
                 }
             }
 
             return errors
-        },onSubmit: (values, {resetForm}) => {
+        }, onSubmit: (values, {resetForm}) => {
             setIsloading(true)
             axios.post('https://back-portfolio-neon.vercel.app/', {
                 email: values.email,
 
             })
                 .then(() => {
-                    setModal(true)
+                    setModalSuccess(true)
 
                     resetForm()
                 })
                 .catch(() => {
-                    setModal(true)
+                    setModalError(true)
 
                 })
                 .finally(() => {
@@ -59,26 +62,36 @@ export const Notification = () => {
             <div></div>
             <form className={s.notificForm} autoComplete={'off'} onSubmit={formik.handleSubmit}>
 
-                {formik.errors.email ?<input type={'email'}placeholder={'Please, enter your Email'} className={s.formError}
-                                             disabled={isLoading} {...formik.getFieldProps("email")}/>
-                    : <input type={'email'}placeholder={'Enter your Email and get notified'} className={s.notificInput}
-                                                 disabled={isLoading} {...formik.getFieldProps("email")}/>}
-
-
-
-
-            <button disabled={
-                !!formik.errors.email} type={'submit'} className={s.notificBtn}><img src={arrow} alt={'notification'}/></button>
-           </form>
-            {modal && <Modal handleCloseModal={handleCloseModal} title={'Success'}  value={'dfdf'}>
+                {formik.errors.email ?
+                    <input type={'email'} placeholder={'Please, enter your Email'} className={s.formError}
+                           disabled={isLoading} {...formik.getFieldProps("email")}/>
+                    : <input type={'email'} placeholder={'Enter your Email and get notified'} className={s.notificInput}
+                             disabled={isLoading} {...formik.getFieldProps("email")}/>}
+                <button disabled={
+                    !!formik.errors.email} type={'submit'} className={s.notificBtn}><img src={arrow}
+                                                                                         alt={'notification'}/></button>
+            </form>
+            {modalSuccess && <Modal handleCloseModal={handleCloseModal}
+                                    title={'SUCCESS'}
+                                    value={'You have successfully subscribed to the email newsletter'}>
                 <div className={s.buttons}>
                     <button className={s.button} onClick={handleCloseModal}>
                         Close
                     </button>
                 </div>
             </Modal>}
+            {modalError && <Modal handleCloseModal={handleCloseModal}
+                       title={'ERROR'} value={''}>
+                    <div className={s.buttons}>
+                        <button className={s.button} onClick={handleCloseModal}>
+                            Close
+                        </button>
+                    </div>
+                </Modal>
+            }
 
-            <div className={s.notificLinkCont}><a className={s.notificLink}>Other Events<img className={s.notifikLinkImg} src={arrowDone}/></a></div>
+            <div className={s.notificLinkCont}> <a href={''} className={s.notificLink}> Other Events <img
+                className={s.notifikLinkImg} src={arrowDone} alt={'arrow'}/></a></div>
         </div>
 
     );
