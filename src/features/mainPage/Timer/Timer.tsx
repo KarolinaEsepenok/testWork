@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState} from 'react';
 import s from './Timer.module.scss'
-import timerImg from '../../../assets/img/timerImg.png'
+
 
 
 export const Timer = () => {
