@@ -1,0 +1,34 @@
+@import 'src/common/style/mixins';
+
+@import 'src/common/style/variables';
+
+.accordionItem{
+
+  .accordionTitle{
+    background-color: #162C4E;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    height: 85px;
+    border:2px solid #FFFFFF;
+    @include text('Poppins', 24px, 600, #FFF, 1, 100%);
+
+    .numberContent{
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+  }.accordionContent{
+     background: url('../../../assets/img/company.png') no-repeat top 0 left 0px/955px 647px
+   }
+}
+.accordionTitleNoActive{
+  background-color: #DF2224;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  height: 85px;
+  border:2px solid #FFFFFF;
+  @include text('Poppins', 24px, 600, #FFF, 1, 100%);
+
+}

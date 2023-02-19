@@ -8,12 +8,12 @@ import { accordionData } from '../../common/Utils/Accordion';
 export const EventsPage = () => {
 
     return (
-        <div>
+        <div className={s.eventsContainer}>
 
                 <Title name={'ALL EVENTS'}/>
             <div className={s.accordionContainer}>
-                {accordionData.map(({ title, content }) => (
-                    <Accordion title={title} content={content} />
+                {accordionData.map(({ numberContent,title, content }) => (
+                    <Accordion numberContent={numberContent} title={title} content={content} />
                 ))}
             </div>
 

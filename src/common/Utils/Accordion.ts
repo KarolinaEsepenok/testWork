@@ -1,13 +1,15 @@
 export const accordionData = [
     {
-        title: 'Section 1',
+        numberContent: '01',
+        title: 'Hawaiian party',
         content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
       laborum cupiditate possimus labore, hic temporibus velit dicta earum
       suscipit commodi eum enim atque at? Et perspiciatis dolore iure
       voluptatem.`
     },
     {
-        title: 'Section 2',
+        numberContent: '02',
+        title: 'Мafia party',
         content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
       reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
       quaerat iure quos dolorum accusantium ducimus in illum vero commodi
@@ -16,42 +18,48 @@ export const accordionData = [
       Repudiandae, mollitia id reprehenderit a ab odit!`
     },
     {
-        title: 'Section 3',
+        numberContent: '03',
+        title: 'Party',
         content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
       quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
       dolor ut sequi minus iste? Quas?`
     }
     ,
     {
-        title: 'Section 4',
+        numberContent: '04',
+        title: 'Party on the beach',
         content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
       quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
       dolor ut sequi minus iste? Quas?`
     }
     ,
     {
-        title: 'Section 5',
+        numberContent: '05',
+        title: 'Home Security',
         content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
       quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
       dolor ut sequi minus iste? Quas?`
     }
     ,
     {
-        title: 'Section 6',
+        numberContent: '06',
+        title: 'Network Design & Implementation',
         content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
       quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
       dolor ut sequi minus iste? Quas?`
     }
     ,
     {
-        title: 'Section 7',
+        numberContent: '07',
+        title: 'System Design & Engineering',
         content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
       quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
       dolor ut sequi minus iste? Quas?`
     }
     ,
     {
-        title: 'Section 8',
+        numberContent: '08',
+        title: 'System Design & Engineering',
         content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
       quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
       dolor ut sequi minus iste? Quas?`

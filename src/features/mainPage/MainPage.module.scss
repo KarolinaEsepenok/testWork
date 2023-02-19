@@ -4,8 +4,8 @@
 
 .mainPageContainer {
   position: relative;
-height: 100vh;
-  min-height: 100%;
+  height: 100vh;
+  //min-height: 100%;
   text-align: center;
   background: url('../../assets/img/bgImgLeft.png') no-repeat top 0 left 0px/470px 419px,
   url('../../assets/img/bgImgRight.png') no-repeat top 0px right 0px/271px 327px;
@@ -21,10 +21,11 @@ height: 100vh;
   }
 
   .mainContent {
-    height: calc(100vh - 192px);
+    //height: calc(100vh - 192px);
     @media screen and (max-width: 768px) {
-      height: 100%;
+
     }
+
     .mainLogoImg {
       padding-top: 110px;
       padding-bottom: 46px;
