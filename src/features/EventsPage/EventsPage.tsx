@@ -1,8 +1,8 @@
 import React from 'react';
-import Title from '../../common/components/Title/Title';
+import {Title} from '../../common/components/title/Title';
 import s from './Events.module.scss'
-import Accordion from '../EventsPage/Accordion/Accordion';
-import { accordionData } from '../../common/Utils/Accordion';
+import Accordion from '../eventsPage/accordion/Accordion';
+import { accordionData } from '../../common/utils/Accordion';
 
 
 export const EventsPage = () => {

@@ -3,11 +3,13 @@
 @import 'src/common/style/variables';
 
 
-.mainName{
- display: flex;
+.mainName {
+  display: flex;
   justify-content: center;
+  padding-right: 10px;
+  padding-left: 10px;
   @include text('Poppins', 72px, 700, #162C4E, 39%, 104%);
- @media screen and (max-width: 768px) {
-  font-size: 36px;
- }
+  @media screen and (max-width: 768px) {
+    font-size: 36px;
+  }
 }

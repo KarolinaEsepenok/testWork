@@ -1,8 +1,6 @@
 import React, {ReactNode} from 'react'
 import closeBtn from '../../../assets/img/closeBtn.png'
-
-
-import s from '../Modal/Modal.module.scss'
+import s from './Modal.module.scss'
 
 
 type ModalType = {

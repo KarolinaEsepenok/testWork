@@ -4,7 +4,7 @@ import arrow from '../../../assets/img/arrowRight.png'
 import arrowDone from '../../../assets/img/arrowDone.png'
 import {useFormik} from "formik";
 
-import {Modal} from '../../../common/components/Modal/Modal';
+import {Modal} from '../../../common/components/modal/Modal';
 import {instance} from '../../../common/axiosInstance/AxiosInstance';
 
 
@@ -95,7 +95,7 @@ export const Notification = () => {
             </Modal>
             }
             <div className={s.notificLinkCont}>
-                <a href={''} className={s.notificLink}> Other Events
+                <a  className={s.notificLink}> Other Events
                     <img className={s.notifikLinkImg}
                          src={arrowDone}
                          alt={'arrow'}
