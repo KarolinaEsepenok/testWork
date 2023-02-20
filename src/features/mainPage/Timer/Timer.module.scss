@@ -2,29 +2,70 @@
 
 @import 'src/common/style/variables';
 
-.timerContainer{
-margin-top: 30px;
+.timerContainer {
+  margin-top: 30px;
   margin-bottom: 50px;
 
-  .timerItems{
+  .timerItems {
     height: 130px;
-
     display: flex;
     justify-content: center;
     @include text('Poppins', 72px, 600, #162C4E, 1, 100%);
-    .timerDays{
-      @include timerItem( url('../../../assets/img/days.png') no-repeat bottom 0px right 0px/132px 44px, 132px, 10px,0px)
+    @media screen and (max-width: 768px) {
+      font-size: 36px;
+      height: 82px;
     }
-    .timerHours{
-      @include timerItem( url('../../../assets/img/hours.png') no-repeat bottom 0px right 0px/132px 44px, 132px, 10px,10px)
-    }
-    .timerMinutes{
-      @include timerItem( url('../../../assets/img/minutes.png') no-repeat bottom 0px right 0px/132px 44px, 132px, 10px,10px)
-    }
-    .timerSeconds{
-      @include timerItem( url('../../../assets/img/seconds.png') no-repeat bottom 0px right 0px/132px 44px, 132px, 0px,10px)
+
+    .timerDays {
+      display: flex;
+      justify-content: center;
+      @include timerItem(url('../../../assets/img/days.png')
+      no-repeat bottom 0px right 0px/132px 44px, 132px, 10px, 0px);
+      @media screen and (max-width: 768px) {
+        @include timerItem(url('../../../assets/img/daysSmall.png')
+        no-repeat bottom 0px right 0px/64px 40px, 64px, 10px, 10px);
+      }
     }
   }
 
+  .timerHours {
+    display: flex;
+    justify-content: center;
+    @include timerItem(url('../../../assets/img/hours.png')
+    no-repeat bottom 0px right 0px/132px 44px, 132px, 10px, 10px);
+    @media screen and (max-width: 768px) {
+      @include timerItem(url('../../../assets/img/hoursSmall.png')
+      no-repeat bottom 0px right 0px/64px 40px, 64px, 10px, 10px);
+    }
+  }
 
+  .timerMinutes {
+    display: flex;
+    justify-content: center;
+    @include timerItem(url('../../../assets/img/minutes.png')
+    no-repeat bottom 0px right 0px/132px 44px, 132px, 10px, 10px);
+    @media screen and (max-width: 768px) {
+      @include timerItem(url('../../../assets/img/minutesSmall.png')
+      no-repeat bottom 0px right 0px/64px 40px, 64px, 10px, 10px);
+    }
+  }
+
+  .timerSeconds {
+    display: flex;
+    justify-content: center;
+    @include timerItem(url('../../../assets/img/seconds.png')
+    no-repeat bottom 0px right 0px/132px 44px, 132px, 0px, 10px);
+    @media screen and (max-width: 768px) {
+      @include timerItem(url('../../../assets/img/secondsSmall.png')
+      no-repeat bottom 0px right 0px/64px 40px, 64px, 10px, 10px);
+    }
+  }
+
+  .dotsTime {
+    padding-left: 10px;
+    @media screen and (max-width: 400px) {
+      padding-left: 1px;
+    }
+  }
 }
+

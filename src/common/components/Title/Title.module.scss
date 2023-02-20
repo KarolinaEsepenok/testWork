@@ -7,4 +7,7 @@
  display: flex;
   justify-content: center;
   @include text('Poppins', 72px, 700, #162C4E, 39%, 104%);
+ @media screen and (max-width: 768px) {
+  font-size: 36px;
+ }
 }

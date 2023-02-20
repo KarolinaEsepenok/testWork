@@ -9,7 +9,6 @@ export const EventsPage = () => {
 
     return (
         <div className={s.eventsContainer}>
-
                 <Title name={'ALL EVENTS'}/>
             <div className={s.accordionContainer}>
                 {accordionData.map(({ numberContent,title, content }) => (

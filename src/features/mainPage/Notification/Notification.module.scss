@@ -16,6 +16,11 @@
   @media screen and (max-width: 1600px) {
     position: relative;
   }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
   .notificForm {
     display: flex;
     align-items: center;
@@ -32,14 +37,18 @@
       border: 1px solid #DF2224;
       padding-left: 20px;
       font-size: 18px;
-      @media screen and (max-width: 1000px) {
-        width: 353px;
+      @media screen and (max-width: 1070px) {
+        width: 360px;
+        font-size: 14px;
+        padding-left: 5px;
       }
-     &::placeholder{
-       color: #DF2224;
+      @media screen and (max-width: 768px) {
+        width: 280px;
+      }
 
-     }
-
+      &::placeholder {
+        color: #DF2224;
+      }
     }
 
     .notificInput {
@@ -50,8 +59,13 @@
       box-sizing: border-box;
       padding-left: 20px;
       font-size: 18px;
-      @media screen and (max-width: 1000px) {
-        width: 353px;
+      @media screen and (max-width: 1070px) {
+        width: 360px;
+        font-size: 14px;
+        padding-left: 5px;
+      }
+      @media screen and (max-width: 768px) {
+        width: 280px;
       }
     }
 
@@ -70,18 +84,19 @@
   .notificLinkCont {
     align-self: center;
     @include text('Poppins', 20px, 400, #FFF, 1, 150%);
-
+    @media screen and (max-width: 768px) {
+      margin-top: 15px;
+      @include text('Poppins', 16px, 400, #FFF, 1, 150%);
+    }
     .notifikLinkImg {
       vertical-align: sub;
     }
   }
-  .button{
+  .button {
     background-color: #162C4E;
     width: 200px;
     color: #FFFFFF;
     border-radius: 40px;
     height: 60px;
   }
-
-
 }
