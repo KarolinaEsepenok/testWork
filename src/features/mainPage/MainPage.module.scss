@@ -36,22 +36,23 @@
       cursor: pointer;
       width: 190px;
       display: inline-block;
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 600px) {
         width: 128px;
         height: 40px;
-        padding-top: 150px;
+        padding-bottom: 88px;
+        padding-top: 70px;
       }
 
       .mainLink {
         height: 60px;
         display: inline-block;
-        @media screen and (max-width: 550px) {
+        @media screen and (max-width: 600px) {
           height: 40px;
         }
       }
 
       .mainImg {
-        @media screen and (max-width: 550px) {
+        @media screen and (max-width: 600px) {
           height: 40px;
         }
       }
