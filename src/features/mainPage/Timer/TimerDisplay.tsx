@@ -4,7 +4,7 @@ import s from './Timer.module.scss'
 type PropsType = {
     value: number | string
 }
-export const DateTimeDisplay: FC<PropsType> = ({value}) => {
+export const TimerDisplay: FC<PropsType> = ({value}) => {
     return (
         <div className={s.timerValue}>{value}</div>
     );

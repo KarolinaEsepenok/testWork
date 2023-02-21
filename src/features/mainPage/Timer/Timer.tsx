@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {DateTimeDisplay} from './TimerDisplay';
+import {TimerDisplay} from './TimerDisplay';
 import {useCountdown} from '../../../common/hooks/UseCountDown';
 import s from './Timer.module.scss';
 
@@ -15,13 +15,13 @@ export const ShowCounter: FC<PropsType> = ({days, hours, minutes, seconds}) => {
     return (
         <div className={s.timerContainer}>
             <div className={s.timerItems}>
-                <div className={s.timerDays}><DateTimeDisplay value={days}/></div>
+                <div className={s.timerDays}><TimerDisplay value={days}/></div>
                 <div className={s.dotsTime}>:</div>
-                <div className={s.timerHours}><DateTimeDisplay value={hours}/></div>
+                <div className={s.timerHours}><TimerDisplay value={hours}/></div>
                 <div className={s.dotsTime}>:</div>
-                <div className={s.timerMinutes}><DateTimeDisplay value={minutes}/></div>
+                <div className={s.timerMinutes}><TimerDisplay value={minutes}/></div>
                 <div className={s.dotsTime}>:</div>
-                <div className={s.timerSeconds}><DateTimeDisplay value={seconds}/></div>
+                <div className={s.timerSeconds}><TimerDisplay value={seconds}/></div>
 
             </div>
         </div>
