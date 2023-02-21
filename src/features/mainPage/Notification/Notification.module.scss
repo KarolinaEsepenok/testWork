@@ -78,12 +78,22 @@
       border-radius: 50%;
       border: none;
       background-color: #DF2224;
-      margin-left: -56px;
+      margin-left: -52px;
+      transition: 0.7s;
+      &:hover {
+        opacity: 0.9;
+        background-color: #162C4E;
+      }
     }
   }
 
   .notificLinkCont {
     align-self: center;
+    transition: 0.7s;
+    &:hover {
+      opacity: 0.8;
+      color: #DF2224;
+    }
     @include text('Poppins', 20px, 400, #FFF, 1, 150%);
     @media screen and (max-width: 768px) {
       margin-top: 15px;

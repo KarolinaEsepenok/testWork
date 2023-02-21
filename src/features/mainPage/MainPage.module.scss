@@ -12,7 +12,7 @@
   height: 100%;
   background: url('../../assets/img/bgImgLeft.png') no-repeat top 0 left 0px/470px 419px,
   url('../../assets/img/bgImgRight.png') no-repeat top 0px right 0px/271px 327px;
-  @media screen and (max-width: 1070px) {
+  @media screen and (max-width: 1100px) {
     background: url('../../assets/img/bgImgLeft.png') no-repeat top -20px left -10px/330px 269px,
     url('../../assets/img/bgImgRight.png') no-repeat top -10px right -20px/271px 327px;
   }
@@ -55,8 +55,8 @@
 
     .mainNameDescr {
       @media screen and (max-width: 1200px) {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
       }
 
       .mainDescr {
@@ -118,6 +118,12 @@
         width: 240px;
         background-color: #162C4E;
         border-radius: 40px;
+        transition: 0.7s;
+        &:hover {
+          border: none;
+          opacity: 0.8;
+          background-color: #DF2224;
+        }
         @include text('Poppins', 18px, 400, #FFF, 1, 150%);
 
         .link {
