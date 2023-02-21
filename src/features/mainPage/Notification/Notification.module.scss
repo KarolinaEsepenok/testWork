@@ -89,6 +89,7 @@
 
   .notificLinkCont {
     align-self: center;
+    cursor: pointer;
     transition: 0.7s;
     &:hover {
       opacity: 0.8;
@@ -100,7 +101,8 @@
       @include text('Poppins', 16px, 400, #FFF, 1, 150%);
     }
     .notifikLinkImg {
-      vertical-align: sub;
+      vertical-align: middle;
+      margin-left: 5px;
     }
   }
   .button {
