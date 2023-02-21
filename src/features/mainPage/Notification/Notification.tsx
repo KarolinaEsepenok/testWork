@@ -95,12 +95,12 @@ export const Notification = () => {
             </Modal>
             }
             <div className={s.notificLinkCont}>
-                <a  className={s.notificLink}> Other Events
+                <div className={s.notificLink}> Other Events
                     <img className={s.notifikLinkImg}
                          src={arrowDone}
                          alt={'arrow'}
                          title={'arrow'}/>
-                </a>
+                </div>
             </div>
         </div>
     );
