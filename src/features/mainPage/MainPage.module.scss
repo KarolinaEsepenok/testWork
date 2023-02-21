@@ -37,6 +37,10 @@
       cursor: pointer;
       width: 190px;
       display: inline-block;
+      @media screen and (max-width: 500px) {
+        width: 128px;
+        height: 40px;
+      }
 
       .mainLink {
         height: 60px;
@@ -46,7 +50,7 @@
         }
       }
 
-      .maimImg {
+      .mainImg {
         @media screen and (max-width: 550px) {
           height: 40px;
         }
@@ -71,17 +75,6 @@
       }
     }
 
-    .mainLogoImg {
-      padding-top: 110px;
-      padding-bottom: 46px;
-      text-align: center;
-      cursor: pointer;
-      @media screen and (max-width: 500px) {
-        width: 128px;
-        height: 40px;
-      }
-    }
-
     .mainNameDescr {
       .mainDescr {
         max-width: 432px;
@@ -99,7 +92,6 @@
       padding-bottom: 150px;
       @media screen and (max-width: 600px) {
         padding-bottom: 86px;
-
       }
 
       .mainDescrDown {
@@ -121,7 +113,6 @@
         transition: 0.7s;
         &:hover {
           border: none;
-          opacity: 0.8;
           background-color: #DF2224;
         }
         @include text('Poppins', 18px, 400, #FFF, 1, 150%);

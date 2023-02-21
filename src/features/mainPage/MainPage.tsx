@@ -18,11 +18,11 @@ export const MainPage = () => {
             <div className={s.mainContent}>
                         <div className={s.mainLogoImg}>
                             <a className={s.mainLink}
-                               href={'https://www.onliner.by/'}
+                               href={'https://karolinaesepenok.github.io/testWork/'}
                                target={'_self'}
                                title={'Link to another site'}>
                                 <img
-                                    className={s.maimImg}
+                                    className={s.mainImg}
                                     src={logoLead}
                                     alt={'logoLead'}
                                     title={'Lead'}
