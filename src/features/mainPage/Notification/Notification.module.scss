@@ -110,5 +110,11 @@
     color: #FFFFFF;
     border-radius: 40px;
     height: 60px;
+    transition: 0.7s;
+    @include text('Poppins', 18px, 400, #FFF, 1, 150%);
+    &:hover{
+      background-color: #df2224;
+      border: none;
+    }
   }
 }
